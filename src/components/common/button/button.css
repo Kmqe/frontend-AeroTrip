@@ -1,0 +1,8 @@
+button {
+  background: var(--gradient-horizontal);
+  color: var(--primary-bg);
+  padding: 10px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
