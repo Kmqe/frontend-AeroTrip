@@ -89,6 +89,10 @@ a {
   text-align: center;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Small screens (tablets, > 768px) */
 @media (min-width: 768px) {
   .container {

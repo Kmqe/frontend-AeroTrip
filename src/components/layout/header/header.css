@@ -1,6 +1,4 @@
 header {
-  display: flex;
-  align-items: center;
   padding: 15px 0;
   box-shadow: 0 2px 2px 0 rgba(0, 57, 138, 0.2);
 }
@@ -18,6 +16,7 @@ header .container .logo {
 header .container nav ul {
   display: flex;
   gap: 40px;
+  margin: 0 !important;
 }
 
 header .container nav ul li {
@@ -41,4 +40,69 @@ header .container .header-actions .icon {
 header .container .header-actions .icon img {
   width: 30px !important;
   cursor: pointer !important;
+}
+
+header .container .bars {
+  background: var(--gradient-horizontal);
+  color: var(--primary-bg);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* ========== Drawer ========== */
+.drawer .header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.drawer .header-actions .icon {
+  width: 30px;
+}
+
+.drawer .header-actions .icon img {
+  width: 100%;
+}
+
+.drawer .header-actions .button-container {
+  width: fit-content;
+}
+
+.drawer nav {
+  justify-content: center;
+}
+
+.drawer nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.drawer nav ul a {
+  position: relative;
+  font-size: 20px;
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.drawer nav ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradient-horizontal);
+  border-radius: 18px;
+  transition: 0.2s;
+}
+
+.drawer nav ul a:hover::before {
+  width: 100%;
 }

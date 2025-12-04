@@ -14,13 +14,9 @@
   align-items: center;
   padding-left: 60px;
   padding-right: 60px;
-  /* justify-content: center; */
 }
 
 .hero .container .hero_text {
-  /* background-color: red; */
-  /* align-items: center; */
-  /* margin: auto; */
   max-width: 500px;
 }
 
@@ -57,7 +53,6 @@
 }
 
 .hero .container .hero_image .gallery {
-  /* background-color: #ccc; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
