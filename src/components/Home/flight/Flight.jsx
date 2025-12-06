@@ -6,7 +6,7 @@ const Flight = () => {
   return (
     <section className="flight">
       <div className="container">
-        <SectionHeader title="Flight Ticket" />
+        <SectionHeader title="Flight Ticket" showMore={true} />
         <div className="tickets-container">
           <Ticket />
           <Ticket />

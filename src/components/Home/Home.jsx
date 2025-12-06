@@ -1,4 +1,5 @@
 import Header from "../layout/header/Header";
+import Features from "./features/Features";
 import Flight from "./flight/Flight";
 import Hero from "./hero/Hero";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Flight />
+      <Features />
     </>
   );
 };
