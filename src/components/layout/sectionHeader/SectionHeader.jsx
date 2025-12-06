@@ -1,9 +1,12 @@
 import "./section_header.css";
 
-const SectionHeader = ({ title, showMore = false }) => {
+const SectionHeader = ({ title, subtitle, showMore = false }) => {
   return (
     <div className="section-header">
-      <h2>{title}</h2>
+      <div className="text">
+        <h2>{title}</h2>
+        {subtitle ? <p>{subtitle}</p> : ""}
+      </div>
       {showMore ? (
         <div className="more">
           <p>view more</p>

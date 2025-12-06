@@ -5,11 +5,17 @@
   padding-bottom: 50px;
 }
 
-.section-header h2 {
+.section-header .text h2 {
   font-size: 48px;
   background: var(--gradient-horizontal);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.section-header .text p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #333333ef;
 }
 
 .section-header .more {
@@ -29,4 +35,19 @@
 
 .section-header .more img {
   width: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .section-header .text h2 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-header .text h2 {
+    font-size: 40px;
+  }
+  .section-header .text p {
+    font-size: 28px;
+  }
 }
