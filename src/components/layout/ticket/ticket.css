@@ -1,0 +1,211 @@
+.ticket {
+  width: 100%;
+  max-width: 850px;
+  border: 5px solid white;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.ticket .ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 81, 166, 0.3) 0%,
+    rgba(16, 137, 211, 0.3) 100%
+  );
+  padding: 15px 30px;
+}
+
+.ticket .ticket-header img {
+  width: 102px;
+}
+
+.ticket .ticket-header p {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.ticket .ticket-header p span {
+  color: var(--primary-color);
+}
+
+.ticket .ticket-body {
+  background-image: url("/images/ticket_background.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px;
+  padding-left: 40px;
+}
+
+.ticket .ticket-body .line-ticket {
+  position: absolute;
+  top: 0;
+  right: 34%;
+  height: 100%;
+}
+
+.ticket .ticket-body .flight-route-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.ticket .ticket-body .flight-route-info .route-box span:first-child {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.ticket .ticket-body .flight-route-info .route-box h2 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.ticket .ticket-body .flight-route-info .route-box p.city {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.ticket .ticket-body .flight-route-info .route-box span.time {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+.ticket .ticket-body .flight-route-info .route-box span.time strong {
+  color: var(--primary-color);
+}
+
+.ticket .ticket-body .flight-route-info .arrow-icons {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 42px;
+  align-self: flex-end;
+}
+
+.ticket .ticket-body .flight-route-info .arrow-icons .arrow-right {
+  font-size: 24px;
+}
+
+.ticket .ticket-body .flight-details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket .ticket-body .flight-details-info p {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ticket .ticket-body .flight-details-info p span {
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 992px) {
+  .ticket .ticket-body {
+    padding-left: initial;
+    padding: 25px 20px;
+  }
+  .ticket .ticket-body .line-ticket {
+    right: 39%;
+  }
+  .ticket .ticket-body .flight-route-info {
+    gap: 15px;
+  }
+  .ticket .ticket-body .flight-route-info .route-box span:first-child {
+    font-size: 22px;
+  }
+  .ticket .ticket-body .flight-route-info .route-box h2 {
+    font-size: 44px;
+  }
+  .ticket .ticket-body .flight-route-info .route-box p.city {
+    font-size: 22px;
+  }
+  .ticket .ticket-body .flight-route-info .arrow-icons .arrow-right {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ticket {
+    max-width: 500px !important;
+    margin: 0 auto;
+  }
+
+  .ticket .ticket-header {
+    padding: 10px 30px;
+  }
+
+  .ticket .ticket-header img {
+    width: 90px;
+  }
+
+  .ticket .ticket-body {
+    padding-left: initial;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ticket .ticket-body .line-ticket {
+    display: none;
+  }
+
+  .ticket .ticket-body .flight-route-info .route-box span:first-child {
+    font-size: 20px;
+  }
+
+  .ticket .ticket-body .flight-route-info .route-box h2 {
+    font-size: 34px;
+  }
+
+  .ticket .ticket-body .flight-route-info .route-box p.city {
+    font-size: 20px;
+  }
+
+  .ticket .ticket-body .flight-route-info .route-box span.time {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .ticket .ticket-body .flight-route-info .arrow-icons {
+    gap: 3px;
+    padding-bottom: 35px;
+  }
+  .ticket .ticket-body .flight-details-info {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .ticket .ticket-body .flight-route-info .route-box span.time {
+    display: flex;
+    flex-direction: column;
+  }
+}

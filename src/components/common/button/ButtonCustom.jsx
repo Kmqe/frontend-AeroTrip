@@ -1,6 +1,6 @@
 import "./button.css";
 
-const Button = ({ text, light = false }) => {
+const ButtonCustom = ({ text, light = false }) => {
   return (
     <div className={`button-container ${light ? "light" : ""}`}>
       <button>{text}</button>
@@ -8,4 +8,4 @@ const Button = ({ text, light = false }) => {
   );
 };
 
-export default Button;
+export default ButtonCustom;

@@ -1,4 +1,4 @@
-import Button from "../../common/button/Button";
+import ButtonCustom from "../../common/button/ButtonCustom";
 import "./hero.css";
 
 const Hero = () => {
@@ -14,8 +14,8 @@ const Hero = () => {
             reliable — your journey starts here.
           </p>
           <div className="buttons">
-            <Button text={"Book Now"} />
-            <Button text={"Explore"} light={true} />
+            <ButtonCustom text={"Book Now"} />
+            <ButtonCustom text={"Explore"} light={true} />
           </div>
         </div>
         <div className="hero_image">

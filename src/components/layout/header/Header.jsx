@@ -6,7 +6,7 @@ import { useState } from "react";
 import useWindowSize from "../../../hooks/useWindowSize";
 
 // Custom button component
-import Button from "../../common/button/Button";
+import ButtonCustom from "../../common/button/ButtonCustom";
 
 // menu icon
 import { FaBars } from "react-icons/fa6";
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="icon">
             <img src="/public/images/Vector.svg" alt="language icon" />
           </div>
-          <Button text={"Login"} />
+          <ButtonCustom text={"Login"} />
         </div>
 
         <div
@@ -77,7 +77,7 @@ const Header = () => {
                 <img src="/public/images/Vector.svg" alt="language icon" />
               </div>
 
-              <Button text={"Login"} />
+              <ButtonCustom text={"Login"} />
             </div>
 
             <nav>

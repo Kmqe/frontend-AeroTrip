@@ -91,7 +91,7 @@
 }
 
 /* Bold 700 */
-/* @font-face {
+@font-face {
   font-family: "Alumni Sans";
   src: url("/fonts/Alumni_Sans/AlumniSans-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -103,7 +103,7 @@
   src: url("/fonts/Alumni_Sans/AlumniSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
-} */
+}
 
 /* ExtraBold 800 */
 /* @font-face {

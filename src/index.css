@@ -1,4 +1,5 @@
 :root {
+  --primary-color: #00398a;
   --primary-bg: #f7f9fc;
   --gradient-horizontal: linear-gradient(
     90deg,

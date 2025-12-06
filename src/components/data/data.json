@@ -1,0 +1,19 @@
+[
+  {
+    "class": "Economy",
+    "from": {
+      "code": "RUH",
+      "city": "Riyadh"
+    },
+    "to": {
+      "code": "DXB",
+      "city": "Dubai"
+    },
+    "departure_time": "10:45 AM",
+    "arrival_time": "12:25 PM",
+    "date": "November 18, 2025 — Tuesday",
+    "duration": "2 hours 40 minutes",
+    "price": "750 SAR",
+    "action": "Book Now"
+  }
+]

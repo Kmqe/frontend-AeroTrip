@@ -1,0 +1,32 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.section-header .more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.section-header .more p {
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-header .more img {
+  width: 15px;
+}

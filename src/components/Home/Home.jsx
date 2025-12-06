@@ -1,4 +1,5 @@
 import Header from "../layout/header/Header";
+import Flight from "./flight/Flight";
 import Hero from "./hero/Hero";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Header />
       <Hero />
+      <Flight />
     </>
   );
 };
