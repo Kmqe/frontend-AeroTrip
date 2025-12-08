@@ -52,10 +52,10 @@ const Header = () => {
         </nav>
         <div className={`${width < 992 ? "hidden" : ""} header-actions`}>
           <div className="icon">
-            <img src="/public/images/Search.svg" alt="search icon" />
+            <img src="/images/Search.svg" alt="search icon" />
           </div>
           <div className="icon">
-            <img src="/public/images/Vector.svg" alt="language icon" />
+            <img src="/images/Vector.svg" alt="language icon" />
           </div>
           <ButtonCustom text={"Login"} />
         </div>
@@ -71,10 +71,10 @@ const Header = () => {
           <div className="drawer">
             <div className="header-actions">
               <div className="icon">
-                <img src="/public/images/Search.svg" alt="search icon" />
+                <img src="/images/Search.svg" alt="search icon" />
               </div>
               <div className="icon">
-                <img src="/public/images/Vector.svg" alt="language icon" />
+                <img src="/images/Vector.svg" alt="language icon" />
               </div>
 
               <ButtonCustom text={"Login"} />

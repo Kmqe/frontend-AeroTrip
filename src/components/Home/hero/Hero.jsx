@@ -20,11 +20,11 @@ const Hero = () => {
         </div>
         <div className="hero_image">
           <div className="gallery">
-            <img src="/public/images/Rectangle1.png" alt="" className="img1" />
-            <img src="/public/images/Rectangle2.png" alt="" className="img2" />
-            <img src="/public/images/Rectangle3.png" alt="" className="img3" />
-            <img src="/public/images/Rectangle4.png" alt="" className="img4" />
-            <img src="/public/images/Rectangle5.png" alt="" className="img5" />
+            <img src="/images/Rectangle1.png" alt="" className="img1" />
+            <img src="/images/Rectangle2.png" alt="" className="img2" />
+            <img src="/images/Rectangle3.png" alt="" className="img3" />
+            <img src="/images/Rectangle4.png" alt="" className="img4" />
+            <img src="/images/Rectangle5.png" alt="" className="img5" />
           </div>
         </div>
       </div>

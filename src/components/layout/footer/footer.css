@@ -18,7 +18,7 @@ footer .footer-top .footer-column h3 {
 footer .footer-top .footer-column ul {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 footer .footer-top .footer-column ul li {

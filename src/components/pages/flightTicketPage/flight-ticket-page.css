@@ -1,0 +1,84 @@
+.flight-page {
+  padding: 50px 0;
+}
+
+.flight-page .months-filter {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(244, 247, 251, 1)
+  );
+  border: 5px solid #fff;
+  border-radius: 50px;
+  margin-bottom: 120px;
+}
+
+.flight-page .months-filter button {
+  padding: 11px 20px;
+  border-radius: 50px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: transparent;
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.flight-page .months-filter button.active {
+  box-shadow: inset rgba(1, 81, 166, 0.14) 0px 0px 25px 5px;
+  padding: 11px 42px;
+}
+
+.flight-page .ticket {
+  margin: 50px auto 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .flight-page .months-filter {
+    gap: 15px;
+  }
+
+  .flight-page .months-filter button {
+    font-size: 25px;
+  }
+
+  .flight-page .months-filter button.active {
+    padding: 11px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flight-page .months-filter {
+    margin-bottom: 70px;
+  }
+
+  .flight-page .months-filter {
+    gap: 0px;
+  }
+
+  .flight-page .months-filter button {
+    font-size: 20px;
+    padding: 11px 15px;
+  }
+
+  .flight-page .months-filter button.active {
+    padding: 11px 20px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .flight-page .months-filter {
+    background: transparent;
+    border: transparent;
+    flex-wrap: wrap;
+  }
+}

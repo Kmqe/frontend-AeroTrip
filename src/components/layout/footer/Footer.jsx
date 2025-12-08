@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className="footer-app">
           <div className="footer-app-image">
-            <img src="/public/images/app.svg" alt="AeroTrip App" />
+            <img src="/images/app.svg" alt="AeroTrip App" />
           </div>
           <div className="footer-app-content">
             <h3>Download our application</h3>
