@@ -9,7 +9,6 @@ const Flight = () => {
         <SectionHeader title="Flight Ticket" showMore={true} />
         <div className="tickets-container">
           <Ticket />
-          <Ticket />
         </div>
       </div>
     </section>

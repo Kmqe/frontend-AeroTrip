@@ -142,7 +142,8 @@ header .container .bars {
   background: var(--gradient-horizontal);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 36px;
+  font-size: 56px;
+  font-family: "Alumni sans", sans-serif;
 }
 
 .drawer-search .box-search .search-logo img {
@@ -163,7 +164,7 @@ header .container .bars {
     margin-bottom: 10px;
   }
   .drawer-search .box-search .search-logo h3 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .drawer-search .box-search .search-logo img {
     width: 38px;

@@ -4,59 +4,63 @@ import { BsArrowRight } from "react-icons/bs";
 
 import ButtonCustom from "../../common/button/ButtonCustom";
 
+import flights from "../../data/data.json";
+
 const Ticket = () => {
-  return (
-    <div className="ticket">
-      <div className="ticket-header">
-        <img src="/images/logo.png" alt="logo" className="logo" />
-        <p>
-          Class:<span>Economy</span>
-        </p>
-      </div>
-      <div className="ticket-body">
-        <img
-          src="/images/line-of-ticket.png"
-          alt="line ticket"
-          className="line-ticket"
-        />
-        <div className="flight-route-info">
-          <div className="from route-box">
-            <span>from</span>
-            <h2>RUH</h2>
-            <p className="city">Riyadh</p>
-            <span className="time">
-              Departure:<strong>10:45 AM</strong>
-            </span>
+  {
+    return flights.map((flight) => (
+      <div className="ticket" key={flight.id}>
+        <div className="ticket-header">
+          <img src="/images/logo.png" alt="logo" className="logo" />
+          <p>
+            Class:<span>{flight.class}</span>
+          </p>
+        </div>
+        <div className="ticket-body">
+          <img
+            src="/images/line-of-ticket.png"
+            alt="line ticket"
+            className="line-ticket"
+          />
+          <div className="flight-route-info">
+            <div className="from route-box">
+              <span>from</span>
+              <h2>{flight.from.code}</h2>
+              <p className="city">{flight.from.city}</p>
+              <span className="time">
+                Departure:<strong>{flight.departure_time}</strong>
+              </span>
+            </div>
+            <div className="arrow-icons">
+              <BsArrowRight className="arrow-right" />
+              <BsArrowRight className="arrow-right" />
+              <BsArrowRight className="arrow-right" />
+            </div>
+            <div className="to route-box">
+              <span>to</span>
+              <h2>{flight.to.code}</h2>
+              <p className="city">{flight.to.city}</p>
+              <span className="time">
+                Arrival:<strong>{flight.arrival_time}</strong>
+              </span>
+            </div>
           </div>
-          <div className="arrow-icons">
-            <BsArrowRight className="arrow-right" />
-            <BsArrowRight className="arrow-right" />
-            <BsArrowRight className="arrow-right" />
-          </div>
-          <div className="to route-box">
-            <span>to</span>
-            <h2>DXB</h2>
-            <p className="city">Dubai</p>
-            <span className="time">
-              Arrival: <strong>12:25 PM</strong>
-            </span>
+          <div className="flight-details-info">
+            <p>
+              Date: <span>{flight.date}</span>
+            </p>
+            <p>
+              Duration: <span>{flight.duration}</span>
+            </p>
+            <p>
+              Price: <span>{flight.price}</span>
+            </p>
+            <ButtonCustom text="Book Now" />
           </div>
         </div>
-        <div className="flight-details-info">
-          <p>
-            Date: <span>November 18, 2025 — Tuesday</span>
-          </p>
-          <p>
-            Duration: <span>2 hours 40 minutes</span>
-          </p>
-          <p>
-            Price: <span>750 SAR</span>
-          </p>
-          <ButtonCustom text="Book Now" />
-        </div>
       </div>
-    </div>
-  );
+    ));
+  }
 };
 
 export default Ticket;
