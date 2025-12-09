@@ -57,7 +57,9 @@ const Header = () => {
           <div className="icon">
             <img src="/images/Vector.svg" alt="language icon" />
           </div>
-          <ButtonCustom text={"Login"} />
+          <Link to={"login"}>
+            <ButtonCustom text={"Login"} />
+          </Link>
         </div>
 
         <div
