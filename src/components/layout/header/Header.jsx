@@ -11,18 +11,27 @@ import ButtonCustom from "../../common/button/ButtonCustom";
 // menu icon
 import { FaBars } from "react-icons/fa6";
 
-// Drawer component from Ant Design (sidebar panel)
+// Drawer component from Ant Design
 import { Drawer } from "antd";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
+  const [placement] = useState("top");
   const width = useWindowSize();
 
-  const showDrawer = () => {
-    setOpen(true);
+  const showNavDrawer = () => {
+    setOpenNav(true);
   };
-  const onClose = () => {
-    setOpen(false);
+  const closeNavDrawer = () => {
+    setOpenNav(false);
+  };
+
+  const showSearchDrawer = () => {
+    setOpenSearch(true);
+  };
+  const closeSearchDrawer = () => {
+    setOpenSearch(false);
   };
 
   return (
@@ -51,7 +60,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className={`${width < 992 ? "hidden" : ""} header-actions`}>
-          <div className="icon">
+          <div className="icon" onClick={showSearchDrawer}>
             <img src="/images/Search.svg" alt="search icon" />
           </div>
           <div className="icon">
@@ -64,12 +73,12 @@ const Header = () => {
 
         <div
           className={`${width > 991 ? "hidden" : ""} bars`}
-          onClick={showDrawer}
+          onClick={showNavDrawer}
         >
           <FaBars />
         </div>
 
-        <Drawer onClose={onClose} open={open}>
+        <Drawer onClose={closeNavDrawer} open={openNav}>
           <div className="drawer">
             <div className="header-actions">
               <div className="icon">
@@ -101,6 +110,23 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
+          </div>
+        </Drawer>
+
+        <Drawer
+          placement={placement}
+          closable={true}
+          onClose={closeSearchDrawer}
+          open={openSearch}
+          key={placement}
+          className="drawer-search"
+        >
+          <div className="box-search">
+            <div className="search-logo">
+              <h3>Search</h3>
+              <img src="/public/images/Search.svg" alt="" />
+            </div>
+            <input type="text" placeholder="Search for a trip..." />
           </div>
         </Drawer>
       </div>
