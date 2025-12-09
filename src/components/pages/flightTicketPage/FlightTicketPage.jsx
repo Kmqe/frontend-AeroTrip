@@ -1,9 +1,9 @@
 import "./flight-ticket-page.css";
 
 import SectionHeader from "../../layout/sectionHeader/SectionHeader";
-import Ticket from "../../layout/ticket/Ticket";
 
 import { useState } from "react";
+import Tickets from "../../layout/ticket/Tickets";
 
 const FlightTicketPage = () => {
   const [active, setActive] = useState("all");
@@ -50,14 +50,7 @@ const FlightTicketPage = () => {
             March
           </button>
         </div>
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
+        <Tickets />
       </div>
     </div>
   );

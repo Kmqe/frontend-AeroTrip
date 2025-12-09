@@ -4,9 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 import ButtonCustom from "../../common/button/ButtonCustom";
 
-import flights from "../../data/data.json";
-
-const Ticket = () => {
+const Ticket = ({ flights }) => {
   {
     return flights.map((flight) => (
       <div className="ticket" key={flight.id}>
