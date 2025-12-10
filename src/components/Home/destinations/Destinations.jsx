@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay } from "swiper/modules";
 
-import Card from "./card/Card";
+import Card from "../../layout/card_destination/Card";
 
 const Destinations = () => {
   return (
@@ -53,22 +53,22 @@ const Destinations = () => {
           }}
         >
           <SwiperSlide>
-            <Card country={"Cairo"} price={1180} />
+            <Card country={"Cairo"} price={1180} imgUrl={"cairo"} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Bali"} price={2500} />
+            <Card country={"Bali"} price={2500} imgUrl={"bali"} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Athens"} price={1811} />
+            <Card country={"Athens"} price={1811} imgUrl={"athens"} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Dubai"} price={750} />
+            <Card country={"Dubai"} price={750} imgUrl={"dubai"} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Moscow"} price={3400} />
+            <Card country={"Moscow"} price={3400} imgUrl={"moscow"} />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"New York"} price={3800} />
+            <Card country={"New York"} price={3800} imgUrl={"new york"} />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -5,6 +5,7 @@ import Header from "../layout/header/Header";
 import FlightTicketPage from "./flightTicketPage/FlightTicketPage";
 import LoginPage from "./loginPage/LoginPage";
 import SignUpPage from "./signUpPage/SignUpPage";
+import DestinationsPage from "./destinationPage/DestinationsPage";
 
 const Pages = () => {
   return (
@@ -16,6 +17,7 @@ const Pages = () => {
         <Route path="/tickets" element={<FlightTicketPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/destinations" element={<DestinationsPage />} />
       </Routes>
       <Footer />
     </>

@@ -1,18 +1,16 @@
 import { GoArrowRight } from "react-icons/go";
+import "./card.css";
 
-const Card = ({ country, price }) => {
+const Card = ({ country, price, imgUrl }) => {
   return (
     <div className="trip-card">
       <div className="image">
-        <img
-          src={`/images/${country.toLowerCase()}.svg`}
-          alt={`${country} picture`}
-        />
+        <img src={`/images/${imgUrl}.svg`} alt={`${country} picture`} />
       </div>
 
       <div className="card-body">
         <div className="card-header">
-          <h3 className="card-title">{country}</h3>
+          <h3 className="card-title">{country.split(" ")[0]}</h3>
           <p className="price">{price} SAR</p>
         </div>
         <div className="card-bottom">

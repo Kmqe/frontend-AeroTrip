@@ -1,63 +1,54 @@
-.destination {
-  padding: 50px 0;
-}
-
-.destination .mySwiper {
-  padding: 50px 0;
-  margin-top: -50px;
-}
-
-/* .destination .trip-card {
+.trip-card {
   max-width: fit-content;
   border: 1px solid black;
   padding: 14px;
   border: 1px solid #00398a;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} */
+}
 
-/* .destination .trip-card .image img {
+.trip-card .image img {
   width: 100%;
-} */
+}
 
-/* .destination .trip-card .card-body {
+.trip-card .card-body {
   padding: 10px 10px 0;
-} */
+}
 
-/* .destination .trip-card .card-body .card-header {
+.trip-card .card-body .card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} */
+}
 
-/* .destination .trip-card .card-body .card-header .card-title {
+.trip-card .card-body .card-header .card-title {
   background: var(--gradient-horizontal);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 38px;
-} */
+}
 
-/* .destination .trip-card .card-body .card-header .price {
+.trip-card .card-body .card-header .price {
   background: var(--gradient-horizontal);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 24px;
   font-weight: 600;
-} */
+}
 
-/* .destination .trip-card .card-body .card-bottom {
+.trip-card .card-body .card-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} */
+}
 
-/* .destination .trip-card .card-body .card-bottom .card-subtitle {
+.trip-card .card-body .card-bottom .card-subtitle {
   font-size: 18px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
-} */
+}
 
-/* .destination .trip-card .card-body .card-bottom .card-action {
+.trip-card .card-body .card-bottom .card-action {
   position: relative;
   width: 24px;
   height: 24px;
@@ -65,17 +56,17 @@
   color: white;
   border-radius: 50px;
   cursor: pointer;
-} */
+}
 
-/* .destination .trip-card .card-body .card-bottom .card-action .icon {
+.trip-card .card-body .card-bottom .card-action .icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 21px;
-} */
+}
 
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .destination .trip-card .card-body .card-header .card-title {
     font-size: 30px;
   }
@@ -102,4 +93,4 @@
   .destination .trip-card .card-body .card-header .card-title {
     font-size: 28px;
   }
-} */
+}
