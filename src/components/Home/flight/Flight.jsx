@@ -25,7 +25,7 @@ const Flight = () => {
         <SectionHeader
           title="Flight Ticket"
           showMore={true}
-          toPage={"/tickets"}
+          toPage={"tickets"}
         />
         <div className="tickets-container">
           <Ticket flights={twoFlight} />

@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
 import "./section_header.css";
 
-const SectionHeader = ({
-  title,
-  subtitle,
-  showMore = false,
-  toPage = "/home",
-}) => {
+const SectionHeader = ({ title, subtitle, showMore = false, toPage }) => {
   return (
     <div className="section-header">
       <div className="text">
