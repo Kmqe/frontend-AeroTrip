@@ -139,7 +139,7 @@ const Header = () => {
           <div className="box-search">
             <div className="search-logo">
               <h3>Search</h3>
-              <img src="/public/images/Search.svg" alt="" />
+              <img src="/images/Search.svg" alt="" />
             </div>
             <input type="text" placeholder="Search for a trip..." />
           </div>

@@ -14,7 +14,7 @@ const SectionHeader = ({
         {subtitle ? <p>{subtitle}</p> : ""}
       </div>
       {showMore ? (
-        <Link to={toPage}>
+        <Link to={`/${toPage}`}>
           <div className="more">
             <p>view more</p>
             <img
