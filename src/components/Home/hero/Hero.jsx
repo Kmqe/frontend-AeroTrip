@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonCustom from "../../common/button/ButtonCustom";
 import "./hero.css";
 
@@ -14,8 +15,12 @@ const Hero = () => {
             reliable — your journey starts here.
           </p>
           <div className="buttons">
-            <ButtonCustom text={"Book Now"} />
-            <ButtonCustom text={"Explore"} light={true} />
+            <Link to={"/tickets"}>
+              <ButtonCustom text={"Book Now"} />
+            </Link>
+            <Link to={"/destinations"}>
+              <ButtonCustom text={"Explore"} light={true} />
+            </Link>
           </div>
         </div>
         <div className="hero_image">

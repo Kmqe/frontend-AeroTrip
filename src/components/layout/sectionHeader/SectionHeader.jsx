@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 import "./section_header.css";
 
-const SectionHeader = ({ title, subtitle, showMore = false }) => {
+const SectionHeader = ({
+  title,
+  subtitle,
+  showMore = false,
+  toPage = "/home",
+}) => {
   return (
     <div className="section-header">
       <div className="text">
@@ -8,10 +14,12 @@ const SectionHeader = ({ title, subtitle, showMore = false }) => {
         {subtitle ? <p>{subtitle}</p> : ""}
       </div>
       {showMore ? (
-        <div className="more">
-          <p>view more</p>
-          <img src="/images/arrow-right.png" alt="arrow right" />
-        </div>
+        <Link to={toPage}>
+          <div className="more">
+            <p>view more</p>
+            <img src="/images/arrow-right.png" alt="arrow right" />
+          </div>
+        </Link>
       ) : (
         ""
       )}

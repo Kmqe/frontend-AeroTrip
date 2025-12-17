@@ -12,7 +12,11 @@ const Flight = () => {
   return (
     <section className="flight">
       <div className="container">
-        <SectionHeader title="Flight Ticket" showMore={true} />
+        <SectionHeader
+          title="Flight Ticket"
+          showMore={true}
+          toPage={"/tickets"}
+        />
         <div className="tickets-container">
           <Ticket flights={twoFlight} />
         </div>

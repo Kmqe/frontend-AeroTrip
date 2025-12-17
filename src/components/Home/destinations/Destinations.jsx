@@ -21,6 +21,7 @@ const Destinations = () => {
           title="Destinations"
           subtitle="Best fares from Riyadh"
           showMore={true}
+          toPage={"destinations"}
         />
 
         <Swiper
