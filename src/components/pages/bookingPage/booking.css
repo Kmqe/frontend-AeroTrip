@@ -1,0 +1,259 @@
+.booking {
+  padding: 50px 0;
+}
+
+.booking .booking-summary {
+  display: flex;
+  justify-content: space-between;
+  max-width: 840px;
+  width: 100%;
+  padding: 10px 30px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(244, 247, 251, 1)
+  );
+  border: 5px solid #fff;
+  border-radius: 50px;
+}
+
+.booking .booking-summary .trip-route {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* .booking .booking-summary .trip-route .from-city,
+.booking .booking-summary .trip-route .to-city {
+  font-size: 28px;
+  font-weight: 500;
+} */
+
+.booking .booking-summary .trip-route .arrows {
+  display: flex;
+  align-items: center;
+}
+
+.booking .booking-summary .trip-route .arrows .arrow {
+  font-size: 24px;
+}
+
+.booking .booking-summary .summary-price {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  gap: 5px;
+}
+
+.booking .booking-summary .summary-date {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  gap: 5px;
+}
+
+.booking .booking-summary .summary-price span.value,
+.booking .booking-summary .summary-date span.value {
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* @media screen and (max-width: 992px) {
+} */
+
+.booking .booking-summary + p {
+  margin: 40px auto 70px;
+  width: fit-content;
+  font-size: 24px;
+  color: rgba(51, 51, 51, 0.9);
+}
+/*  ================================================================ */
+.booking .booking-form {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.booking .booking-form .form-panel {
+  padding: 35px 25px;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 81, 166, 0.1),
+    rgba(16, 137, 211, 0.1)
+  );
+  border: 1px solid #00398a;
+  border-radius: 20px;
+}
+
+.booking .booking-form .form-panel.payment-details {
+  max-width: 460px;
+  width: 100%;
+}
+
+.booking .booking-form .form-panel h2 {
+  background: var(--gradient-horizontal);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.booking .booking-form .form-panel input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 13px 27px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: 1px solid #00398a;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 2px 2px 0;
+}
+
+.booking .booking-form .form-panel input[name="cvv"] {
+  width: 100px;
+  padding: 13px 15px;
+}
+
+.booking .booking-form .form-panel .form-check {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 8px;
+}
+
+.booking .booking-form .form-panel .form-check input {
+  width: 24px;
+  cursor: pointer;
+}
+
+.booking .booking-form .form-panel .form-check label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.booking .booking-form .form-panel .button-container {
+  width: fit-content;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 30px auto 10px;
+}
+
+.booking .booking-form .form-panel.passenger-info {
+  max-width: 630px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  /* .booking .booking-form .form-panel.passenger-info {
+    max-width: 500px;
+  } */
+  .booking .booking-form .form-panel.payment-details {
+    max-width: 400px;
+  }
+  .booking .booking-form .form-panel .form-check label {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .booking .booking-summary .trip-route {
+    gap: 15px;
+  }
+
+  .booking .booking-summary .trip-route {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .booking .booking-summary .trip-route .arrows .arrow {
+    font-size: 18px;
+  }
+
+  .booking .booking-summary .summary-price {
+    font-size: 22px;
+  }
+
+  .booking .booking-summary .summary-date {
+    font-size: 22px;
+  }
+  .booking .booking-form {
+    gap: 35px;
+  }
+
+  .booking .booking-form .form-panel .form-check input {
+    width: 20px;
+  }
+
+  .booking .booking-form .form-panel input:not([type="checkbox"]) {
+    padding: 11px 10px;
+  }
+
+  .booking .booking-form .form-panel input:not([type="checkbox"])::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .booking .booking-summary {
+    padding: 10px 15px;
+  }
+
+  .booking .booking-summary .trip-route {
+    font-size: 18px;
+  }
+
+  .booking .booking-summary .summary-price {
+    font-size: 18px;
+  }
+
+  .booking .booking-summary .summary-date {
+    font-size: 18px;
+  }
+
+  .booking .booking-summary + p {
+    margin: 30px auto 40px;
+  }
+
+  .booking .booking-form {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .booking .booking-form .form-panel {
+    max-width: 400px !important;
+    padding: 25px 20px;
+  }
+
+  .booking .booking-form .form-panel input:not([type="checkbox"]) {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+  }
+
+  .booking .booking-form .form-panel .button-container {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 15px auto 10px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .booking .booking-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .booking .booking-summary .trip-route,
+  .booking .booking-summary .summary-price,
+  .booking .booking-summary .summary-date {
+    font-size: 18px;
+  }
+}

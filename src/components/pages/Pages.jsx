@@ -6,6 +6,7 @@ import FlightTicketPage from "./flightTicketPage/FlightTicketPage";
 import LoginPage from "./loginPage/LoginPage";
 import SignUpPage from "./signUpPage/SignUpPage";
 import DestinationsPage from "./destinationPage/DestinationsPage";
+import Booking from "./bookingPage/Booking";
 
 const Pages = () => {
   return (
@@ -18,6 +19,7 @@ const Pages = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/destinations" element={<DestinationsPage />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
     </>
