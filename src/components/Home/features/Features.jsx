@@ -1,10 +1,20 @@
+import { useLocation } from "react-router-dom";
 import SectionHeader from "../../layout/sectionHeader/SectionHeader";
 import Card from "./cards/Card";
 import "./features.css";
+import { useEffect } from "react";
 
 const Features = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }, [hash]);
+
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="container">
         <SectionHeader title="Features" />
         <div className="features-grid">

@@ -12,10 +12,20 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 
 import Card from "../../layout/card_destination/Card";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Destinations = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }, [hash]);
+
   return (
-    <section className="destination">
+    <section className="destination" id="destination">
       <div className="container">
         <SectionHeader
           title="Destinations"

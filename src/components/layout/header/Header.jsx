@@ -43,19 +43,19 @@ const Header = () => {
         <nav className={width < 992 ? "hidden" : ""}>
           <ul>
             <li>
-              <Link>Home</Link>
+              <Link to={"/home#hero"}>Home</Link>
             </li>
             <li>
-              <Link>Flights</Link>
+              <Link to={"/home#flight"}>Flights</Link>
             </li>
             <li>
-              <Link>Destinations</Link>
+              <Link to={"/home#destination"}>Destinations</Link>
             </li>
             <li>
-              <Link>Features</Link>
+              <Link to={"/home#features"}>Features</Link>
             </li>
             <li>
-              <Link>Contact</Link>
+              <Link to={"/home#contact"}>Contact</Link>
             </li>
           </ul>
         </nav>
@@ -81,32 +81,47 @@ const Header = () => {
         <Drawer onClose={closeNavDrawer} open={openNav}>
           <div className="drawer">
             <div className="header-actions">
-              <div className="icon">
+              <div
+                className="icon"
+                onClick={() => {
+                  closeNavDrawer();
+                  showSearchDrawer();
+                }}
+              >
                 <img src="/images/Search.svg" alt="search icon" />
               </div>
               <div className="icon">
                 <img src="/images/Vector.svg" alt="language icon" />
               </div>
-
               <ButtonCustom text={"Login"} />
             </div>
 
             <nav>
               <ul>
                 <li>
-                  <Link>Home</Link>
+                  <Link to={"/home#hero"} onClick={closeNavDrawer}>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link>Flights</Link>
+                  <Link to={"/home#flight"} onClick={closeNavDrawer}>
+                    Flight
+                  </Link>
                 </li>
                 <li>
-                  <Link>Destinations</Link>
+                  <Link to={"/home#destination"} onClick={closeNavDrawer}>
+                    Destinations
+                  </Link>
                 </li>
                 <li>
-                  <Link>Features</Link>
+                  <Link to={"/home#features"} onClick={closeNavDrawer}>
+                    Features
+                  </Link>
                 </li>
                 <li>
-                  <Link>Contact</Link>
+                  <Link to={"/home#contact"} onClick={closeNavDrawer}>
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </nav>

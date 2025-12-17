@@ -2,9 +2,19 @@ import "./contact.css";
 
 import SectionHeader from "../../layout/sectionHeader/SectionHeader";
 import ButtonCustom from "../../common/button/ButtonCustom";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const Contact = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }, [hash]);
+
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="container">
         <SectionHeader
           title="Contact us"

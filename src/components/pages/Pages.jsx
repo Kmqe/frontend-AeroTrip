@@ -15,6 +15,7 @@ const Pages = () => {
       <Header />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/tickets" element={<FlightTicketPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
