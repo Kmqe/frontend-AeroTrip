@@ -16,6 +16,7 @@ const Card = ({ title, description, icon }) => {
           src={`/images/${icon}.svg`}
           alt="dollar sign"
           className={`${icon == "dollar-sign" ? "dollar" : ""}`}
+          loading="lazy"
         />
       </div>
     </div>

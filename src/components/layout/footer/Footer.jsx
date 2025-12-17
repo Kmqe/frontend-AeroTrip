@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className="footer-app">
           <div className="footer-app-image">
-            <img src="/images/app.svg" alt="AeroTrip App" />
+            <img src="/images/app.svg" alt="AeroTrip App" loading="lazy" />
           </div>
           <div className="footer-app-content">
             <h3>Download our application</h3>
@@ -63,12 +63,14 @@ const Footer = () => {
                 <img
                   src="/images/google-play.svg"
                   alt="Get it on Google Play"
+                  loading="lazy"
                 />
               </a>
               <a href="#" className="store-btn">
                 <img
                   src="/images/app-store.svg"
                   alt="Download on the App Store"
+                  loading="lazy"
                 />
               </a>
             </div>

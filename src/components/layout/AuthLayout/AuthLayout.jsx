@@ -8,7 +8,7 @@ const AuthLayout = ({ authType }) => {
   return (
     <div className="auth-layout">
       <div className="container">
-        <img src="/images/logo_auth.svg" alt="logo auth" />
+        <img src="/images/logo_auth.svg" alt="logo auth" loading="lazy" />
         <div className="auth-form">
           <h2>{authType.replace(/^\w/, (c) => c.toUpperCase())}</h2>
           <form action="#">
@@ -36,13 +36,21 @@ const AuthLayout = ({ authType }) => {
             </a>
             <div className="social-providers">
               <div>
-                <img src="/images/google.svg" alt="google logo" />
+                <img
+                  src="/images/google.svg"
+                  alt="google logo"
+                  loading="lazy"
+                />
               </div>
               <div>
-                <img src="/images/apple.svg" alt="apple logo" />
+                <img src="/images/apple.svg" alt="apple logo" loading="lazy" />
               </div>
               <div>
-                <img src="/images/phone-number.svg" alt="phone number logo" />
+                <img
+                  src="/images/phone-number.svg"
+                  alt="phone number logo"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="auth-switch">

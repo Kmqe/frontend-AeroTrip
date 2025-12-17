@@ -54,22 +54,52 @@ const Destinations = () => {
           }}
         >
           <SwiperSlide>
-            <Card country={"Cairo"} price={1180} imgUrl={"cairo"} />
+            <Card
+              country={"Cairo"}
+              price={1180}
+              imgUrl={"cairo"}
+              loading="lazy"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Bali"} price={2500} imgUrl={"bali"} />
+            <Card
+              country={"Bali"}
+              price={2500}
+              imgUrl={"bali"}
+              loading="lazy"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Athens"} price={1811} imgUrl={"athens"} />
+            <Card
+              country={"Athens"}
+              price={1811}
+              imgUrl={"athens"}
+              loading="lazy"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Dubai"} price={750} imgUrl={"dubai"} />
+            <Card
+              country={"Dubai"}
+              price={750}
+              imgUrl={"dubai"}
+              loading="lazy"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"Moscow"} price={3400} imgUrl={"moscow"} />
+            <Card
+              country={"Moscow"}
+              price={3400}
+              imgUrl={"moscow"}
+              loading="lazy"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Card country={"New York"} price={3800} imgUrl={"new york"} />
+            <Card
+              country={"New York"}
+              price={3800}
+              imgUrl={"new york"}
+              loading="lazy"
+            />
           </SwiperSlide>
         </Swiper>
       </div>

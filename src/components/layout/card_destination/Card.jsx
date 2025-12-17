@@ -5,7 +5,11 @@ const Card = ({ country, price, imgUrl }) => {
   return (
     <div className="trip-card">
       <div className="image">
-        <img src={`/images/${imgUrl}.svg`} alt={`${country} picture`} />
+        <img
+          src={`/images/${imgUrl}.svg`}
+          alt={`${country} picture`}
+          loading="lazy"
+        />
       </div>
 
       <div className="card-body">

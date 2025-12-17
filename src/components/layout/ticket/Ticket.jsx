@@ -3,13 +3,19 @@ import "./ticket.css";
 import { BsArrowRight } from "react-icons/bs";
 
 import ButtonCustom from "../../common/button/ButtonCustom";
+import { Link } from "react-router-dom";
 
 const Ticket = ({ flights }) => {
   {
     return flights.map((flight) => (
       <div className="ticket" key={flight.id}>
         <div className="ticket-header">
-          <img src="/images/logo.png" alt="logo" className="logo" />
+          <img
+            src="/images/logo.png"
+            alt="logo"
+            className="logo"
+            loading="lazy"
+          />
           <p>
             Class:<span>{flight.class}</span>
           </p>
@@ -19,6 +25,7 @@ const Ticket = ({ flights }) => {
             src="/images/line-of-ticket.png"
             alt="line ticket"
             className="line-ticket"
+            loading="lazy"
           />
           <div className="flight-route-info">
             <div className="from route-box">
@@ -53,7 +60,9 @@ const Ticket = ({ flights }) => {
             <p>
               Price: <span>{flight.price}</span>
             </p>
-            <ButtonCustom text="Book Now" />
+            <Link to={"/booking"}>
+              <ButtonCustom text="Book Now" />
+            </Link>
           </div>
         </div>
       </div>

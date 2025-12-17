@@ -16,19 +16,23 @@ const Contact = () => {
             <div className="center-info">
               <div className="contact-item">
                 <div className="icon">
-                  <img src="/images/phone.svg" alt="phone" />
+                  <img src="/images/phone.svg" alt="phone" loading="lazy" />
                 </div>
                 <p>+966 555 000 123</p>
               </div>
               <div className="contact-item">
                 <div className="icon">
-                  <img src="/images/location.svg" alt="location" />
+                  <img
+                    src="/images/location.svg"
+                    alt="location"
+                    loading="lazy"
+                  />
                 </div>
                 <p>Riyadh,Saudi Arabia</p>
               </div>
               <div className="contact-item">
                 <div className="icon">
-                  <img src="/images/email.svg" alt="phone" />
+                  <img src="/images/email.svg" alt="phone" loading="lazy" />
                 </div>
                 <p>support@trip.com</p>
               </div>
@@ -36,13 +40,25 @@ const Contact = () => {
             <p>Follow us on</p>
             <div className="social-media">
               <div className="social-icon">
-                <img src="/images/tiktok.svg" alt="tiktok account" />
+                <img
+                  src="/images/tiktok.svg"
+                  alt="tiktok account"
+                  loading="lazy"
+                />
               </div>
               <div className="social-icon">
-                <img src="/images/instagram.svg" alt="instagram account" />
+                <img
+                  src="/images/instagram.svg"
+                  alt="instagram account"
+                  loading="lazy"
+                />
               </div>
               <div className="social-icon">
-                <img src="/images/snapchat.svg" alt="snapchat account" />
+                <img
+                  src="/images/snapchat.svg"
+                  alt="snapchat account"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

@@ -17,7 +17,11 @@ const SectionHeader = ({
         <Link to={toPage}>
           <div className="more">
             <p>view more</p>
-            <img src="/images/arrow-right.png" alt="arrow right" />
+            <img
+              src="/images/arrow-right.png"
+              alt="arrow right"
+              loading="lazy"
+            />
           </div>
         </Link>
       ) : (
